@@ -1,0 +1,10 @@
+C:\Users\Braian Freitas\Documents\Doc\4º Período\Estrutura de Dados2\2Bim\Caixeiro Viajante\CaixeiroViajante\CaixeiroViajante\bin\Debug\CaixeiroViajante.exe.config
+C:\Users\Braian Freitas\Documents\Doc\4º Período\Estrutura de Dados2\2Bim\Caixeiro Viajante\CaixeiroViajante\CaixeiroViajante\bin\Debug\CaixeiroViajante.exe
+C:\Users\Braian Freitas\Documents\Doc\4º Período\Estrutura de Dados2\2Bim\Caixeiro Viajante\CaixeiroViajante\CaixeiroViajante\bin\Debug\CaixeiroViajante.pdb
+C:\Users\Braian Freitas\Documents\Doc\4º Período\Estrutura de Dados2\2Bim\Caixeiro Viajante\CaixeiroViajante\CaixeiroViajante\obj\Debug\CaixeiroViajante.csprojAssemblyReference.cache
+C:\Users\Braian Freitas\Documents\Doc\4º Período\Estrutura de Dados2\2Bim\Caixeiro Viajante\CaixeiroViajante\CaixeiroViajante\obj\Debug\CaixeiroViajante.BoxTravelerView.resources
+C:\Users\Braian Freitas\Documents\Doc\4º Período\Estrutura de Dados2\2Bim\Caixeiro Viajante\CaixeiroViajante\CaixeiroViajante\obj\Debug\CaixeiroViajante.Properties.Resources.resources
+C:\Users\Braian Freitas\Documents\Doc\4º Período\Estrutura de Dados2\2Bim\Caixeiro Viajante\CaixeiroViajante\CaixeiroViajante\obj\Debug\CaixeiroViajante.csproj.GenerateResource.cache
+C:\Users\Braian Freitas\Documents\Doc\4º Período\Estrutura de Dados2\2Bim\Caixeiro Viajante\CaixeiroViajante\CaixeiroViajante\obj\Debug\CaixeiroViajante.csproj.CoreCompileInputs.cache
+C:\Users\Braian Freitas\Documents\Doc\4º Período\Estrutura de Dados2\2Bim\Caixeiro Viajante\CaixeiroViajante\CaixeiroViajante\obj\Debug\CaixeiroViajante.exe
+C:\Users\Braian Freitas\Documents\Doc\4º Período\Estrutura de Dados2\2Bim\Caixeiro Viajante\CaixeiroViajante\CaixeiroViajante\obj\Debug\CaixeiroViajante.pdb
