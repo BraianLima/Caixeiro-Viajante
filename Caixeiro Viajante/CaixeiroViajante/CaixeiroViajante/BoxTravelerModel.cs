@@ -28,5 +28,17 @@ namespace CaixeiroViajante
             this.City = SearchCity;
         }
 
+        public void StreetCity(string SearchStreet, string SearchCity)
+        {
+            this.Street = SearchStreet;
+            this.City = SearchCity;
+        }
+
+        public void LatLong(string SearchLat, string SearchLon)
+        {
+            this.Lat = SearchLat;
+            this.Lon = SearchLon;
+        }
+
     }
 }

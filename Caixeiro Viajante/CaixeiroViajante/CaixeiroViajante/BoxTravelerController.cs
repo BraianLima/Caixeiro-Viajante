@@ -9,11 +9,11 @@ namespace CaixeiroViajante
 {
     class BoxTravelerController
     {
+        BoxTravelerModel Dados = new BoxTravelerModel();
 
-        public BoxTravelerController(string street, string city, WebBrowser map)
+        public BoxTravelerController()
         {
-            BoxTravelerModel Dados = new BoxTravelerModel(street, city);
-            SearchLocal(Dados.Street, Dados.City, map);
+
         }
 
         public BoxTravelerController(WebBrowser GoogleMaps)
@@ -51,8 +51,12 @@ namespace CaixeiroViajante
             }
         }
 
-        private void SearchLocal(string currentStreet, string currentCity, WebBrowser currentMap)
+        public void SearchLocal(string currentStreet, string currentCity, WebBrowser currentMap)
         {
+            Dados.StreetCity(currentStreet, currentCity);
+            currentStreet = Dados.Street;
+            currentCity = Dados.City;
+
             try
             {
                 StringBuilder queryaddress = new StringBuilder();
@@ -69,6 +73,35 @@ namespace CaixeiroViajante
                 }
 
                 currentMap.Navigate(queryaddress.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString(), "Error");
+            }
+        }
+
+        public void SearchLatLon(string currentLat, string currentLon, WebBrowser currentMap)
+        {
+            Dados.LatLong(currentLat, currentLon);
+            
+            try
+            {
+                string lat = string.Empty;
+                string lon = string.Empty;
+                StringBuilder queryAddress = new StringBuilder();
+                queryAddress.Append("http://maps.google.com/maps?q=");
+
+                if (Dados.Lat != string.Empty)
+                {
+                    lat = Dados.Lat;
+                    queryAddress.Append(lat + "%2C");
+                }
+                if (Dados.Lon != string.Empty)
+                {
+                    lon = Dados.Lon;
+                    queryAddress.Append(lon);
+                }
+                currentMap.Navigate(queryAddress.ToString());
             }
             catch (Exception ex)
             {

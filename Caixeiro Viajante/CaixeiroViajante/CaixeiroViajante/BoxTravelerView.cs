@@ -12,15 +12,17 @@ namespace CaixeiroViajante
 {
     public partial class BoxTravelerView : Form
     {
+        BoxTravelerController Controller = new BoxTravelerController();
         public BoxTravelerView()
         {
             InitializeComponent();
             new BoxTravelerController(webBrowserMaps);
         }
+        
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            new BoxTravelerController(richtxtboxStreet.Text, richtxtboxCity.Text, webBrowserMaps);
+            Controller.SearchLocal(richtxtboxStreet.Text, richtxtboxCity.Text, webBrowserMaps);
         }
 
         private void btnLatLong_Click(object sender, EventArgs e)
@@ -32,27 +34,9 @@ namespace CaixeiroViajante
                 return;
             }
 
-            try
+            else
             {
-                string lat = string.Empty;
-                string lon = string.Empty;
-                StringBuilder queryAddress = new StringBuilder();
-                queryAddress.Append("http://maps.google.com/maps?q=");
-
-                if (richtxtboxLat.Text != string.Empty)
-                {
-                    lat = richtxtboxLat.Text;
-                    queryAddress.Append(lat + "%2C");
-                }
-                if (richtxtboxLong.Text != string.Empty)
-                {
-                    lon = richtxtboxLong.Text;
-                    queryAddress.Append(lon);
-                }
-                webBrowserMaps.Navigate(queryAddress.ToString());
-            } catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message.ToString(), "Error");
+                Controller.SearchLatLon(richtxtboxLat.Text, richtxtboxLong.Text, webBrowserMaps);
             }
         }
     }
